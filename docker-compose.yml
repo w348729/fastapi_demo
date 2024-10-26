@@ -1,0 +1,28 @@
+
+services:
+  web:
+    build:
+      context: ./
+    ports:
+      - "8888:80"
+    volumes:
+      - ./:/app
+    depends_on:
+      - mongodb
+    networks:
+      - mynet
+    env_file:
+      - docker.env
+
+  mongodb:
+    image: mongo:latest
+    env_file:
+      - .env
+    networks:
+      - mynet
+    ports:
+      - 27017:27017
+
+networks: 
+    mynet: 
+        driver: bridge 
