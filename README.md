@@ -1,4 +1,4 @@
-# Example: Docker Compose
+# Example: FASTAPI
 The demo shows how to set up FastAPI with MongoDB.
 
 
