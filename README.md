@@ -46,7 +46,7 @@ Select below one of this two ways base on ur needs
 - `pipenv shell` active vitrul env 
 - `pipenv install` or `pipenv run pip install -r requirements.txt` to install required libs thenrestart shell to load them
 - `docker-compose up -d` to start mongodb in container
-- `uvicorn main:app --reload` to start server
+- `uvicorn main:app --reload` to start server，api entry port is http://127.0.0.1:8000
 
     **[.env](.env) for local env variables would be loaded**
 ### * for testing prupose directly run it in docker
@@ -60,7 +60,7 @@ Backend is using oauth2 JWT token for auth, valid time is 300m
 1. Register
    > Request
     ``` 
-    POST http://127.0.0.1:8888/auth/register 
+    POST http://127.0.0.1:8000/auth/register 
     Json data: 
     {
         "username": "ttth",
