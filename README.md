@@ -13,7 +13,9 @@ for docker windows users, if u encounter cant start docker enginer issue, do as 
 - update wsl `wsl --update`
 - go to docker installation pasth then run `.\DockerCli.exe -SwitchDaemon`
 - start docker desktop with admin then it should be ok
-
+if cant pull docker image, try with vpn or setting docker engine config with **"registry-mirrors": [
+    "https://docker.anyhub.us.kg"
+  ]** or any other mirrors address as some mirrors are usually updated daily based
 ### set up Python Environment
 Use Pipenv to manage local python running env
 `
