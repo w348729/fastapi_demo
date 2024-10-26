@@ -37,6 +37,8 @@ fastapi_demo
 ── docker.env (docker env file)
 ── Dockerfile
 ── requirements.txt
+—— Pipfile
+—— Pipfile.lock
 ```
 
 -------------
