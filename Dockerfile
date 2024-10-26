@@ -7,7 +7,6 @@ FROM python:latest as base
 # COPY start.sh ./app
 
 ADD . /app
-COPY start.sh /app
 COPY requirements.txt /app
 WORKDIR /app
 
@@ -20,5 +19,4 @@ FROM base
 RUN pip install --no-cache-dir -r /app/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN chmod +x /app/*.sh
 
-# CMD ["/app/start.sh"]
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
