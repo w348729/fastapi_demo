@@ -16,8 +16,8 @@ for docker windows users, if u encounter cant start docker enginer issue, do as 
 - if cant pull docker image, try with vpn or setting docker engine config with **"registry-mirrors": [
     "https://docker.anyhub.us.kg"
   ]** or any other mirrors address as some mirrors are usually updated daily based
-### set up Python Environment
-Use Pipenv to manage local python running env
+### install pipenv
+- we use Pipenv to manage local python running env
 `
 pip install --user pipenv
 `
