@@ -42,7 +42,7 @@ fastapi_demo
 Select below one of this two way base on ur needs
 ### * for local developemt prepare local enviroment first, temp command out [web](docker-compose.yml) part in [docker-compose.yml](docker-compose.yml) file as running in directly in local
 - `pipenv shell` active vitrul env 
-- `pipenv install` or `pipenv run pip install -r requirements.txt` to install required libs
+- `pipenv install` or `pipenv run pip install -r requirements.txt` to install required libs thenrestart shell to load them
 - `docker-compose up -d` to start mongodb in container
 - `uvicorn main:app --reload` to start server
 
