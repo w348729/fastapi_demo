@@ -25,3 +25,4 @@ rsa==4.9
 six==1.16.0
 unicorn==2.1.1
 python-dotenv==1.0.1
+uvicorn==0.32.0
