@@ -17,6 +17,5 @@ RUN apt-get install -y python3 python3-pip build-essential
 FROM base
 #imstall libs
 RUN pip install --no-cache-dir -r /app/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-RUN chmod +x /app/*.sh
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
