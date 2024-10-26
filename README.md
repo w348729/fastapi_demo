@@ -48,6 +48,7 @@ Select below one of this two ways base on ur needs
 - `pipenv shell` active vitrul env 
 - `pipenv install` or `pipenv run pip install -r requirements.txt` to install required libs thenrestart shell to load them
 - `docker-compose up -d` to start mongodb in container
+- select python interpreter in vscode that just created
 - `uvicorn main:app --reload` to start server，api entry port is http://127.0.0.1:8000
 
     **[.env](.env) for local env variables would be loaded**
